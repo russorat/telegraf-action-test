@@ -11,3 +11,7 @@ jobs:
         uses: russorat/telegraf-action@main
         with:
           telegraf_version: nightly
+      - name: Run Telegraf
+        run: |
+          telegraf --test
+          
